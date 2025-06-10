@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KPRCAS Login</title>
   <style>
     body {
@@ -21,14 +21,19 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
       width: 100%;
       max-width: 400px;
+      text-align: center;
+    }
+    .login-container img {
+      width: 100px;
+      margin-bottom: 20px;
     }
     .login-container h2 {
-      text-align: center;
       color: #1e3d59;
       margin-bottom: 30px;
     }
     .form-group {
       margin-bottom: 20px;
+      text-align: left;
     }
     label {
       display: block;
@@ -56,7 +61,6 @@
       background-color: #163247;
     }
     .footer {
-      text-align: center;
       margin-top: 20px;
       font-size: 13px;
       color: #888;
@@ -65,21 +69,5 @@
 </head>
 <body>
   <div class="login-container">
-    <h2>KPRCAS Login</h2>
-    <form>
-      <div class="form-group">
-        <label for="username">Username / Email</label>
-        <input type="text" id="username" name="username" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
-      </div>
-      <button type="submit" class="login-btn">Login</button>
-    </form>
-    <div class="footer">
-      © 2025 KPR College of Arts Science and Research
-    </div>
-  </div>
-</body>
-</html>
+    <!-- Replace the src below with your college logo URL -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Placeholder
