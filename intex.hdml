@@ -5,9 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KPRCAS Login</title>
   <style>
+    /* Basic reset */
+    * {
+      box-sizing: border-box;
+    }
     body {
-      font-family: Arial, sans-serif;
-      background: #f0f2f5;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, 
+                   "Apple Color Emoji", "Segoe UI Emoji";
+      background-color: #f6f8fa;
       margin: 0;
       display: flex;
       justify-content: center;
@@ -15,73 +20,78 @@
       height: 100vh;
     }
     .login-container {
-      background: white;
-      padding: 40px;
-      border-radius: 10px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      background: #fff;
+      padding: 40px 30px;
+      border: 1px solid #d1d5da;
+      border-radius: 6px;
       width: 100%;
       max-width: 400px;
+      box-shadow: 0 1px 3px rgba(27,31,35,.1);
+    }
+    .login-container h1 {
+      margin: 0 0 24px;
+      font-weight: 600;
+      font-size: 26px;
+      color: #24292e;
       text-align: center;
-    }
-    .login-container img {
-      width: 100px;
-      margin-bottom: 20px;
-    }
-    .login-container h2 {
-      color: #1e3d59;
-      margin-bottom: 30px;
-    }
-    .form-group {
-      margin-bottom: 20px;
-      text-align: left;
     }
     label {
       display: block;
-      margin-bottom: 8px;
-      font-weight: bold;
+      font-weight: 600;
+      margin-bottom: 6px;
+      color: #24292e;
+      font-size: 14px;
     }
     input[type="text"],
     input[type="password"] {
       width: 100%;
-      padding: 10px;
-      border: 1px solid #ccc;
+      padding: 10px 12px;
+      margin-bottom: 16px;
+      font-size: 14px;
+      border: 1px solid #d1d5da;
       border-radius: 6px;
+      transition: border-color .2s;
     }
-    .login-btn {
+    input[type="text"]:focus,
+    input[type="password"]:focus {
+      outline: none;
+      border-color: #0366d6;
+      box-shadow: 0 0 0 3px rgba(3,102,214,0.3);
+    }
+    button {
       width: 100%;
       padding: 12px;
-      background-color: #1e3d59;
-      color: white;
+      background-color: #2ea44f;
       border: none;
       border-radius: 6px;
+      color: white;
+      font-weight: 600;
       font-size: 16px;
       cursor: pointer;
+      transition: background-color .2s;
     }
-    .login-btn:hover {
-      background-color: #163247;
+    button:hover {
+      background-color: #22863a;
     }
     .footer {
       margin-top: 20px;
-      font-size: 13px;
-      color: #888;
+      text-align: center;
+      font-size: 12px;
+      color: #6a737d;
     }
   </style>
 </head>
 <body>
   <div class="login-container">
-    <!-- Optional: Add your logo here -->
-    <!-- <img src="your-logo-url.png" alt="KPRCAS Logo" /> -->
-    <h2>KPRCAS Login</h2>
+    <h1>KPRCAS</h1>
     <form>
-      <div class="form-group">
-        <label for="username">Username / Email</label>
-        <input type="text" id="username" name="username" required />
-      </div>
-      <div class="form-group">
-        <label for="password">Password</label>
-        <input type="password" id="password" name="password" required />
-      </div>
-      <button type="submit" class="login-btn">Login</button>
+      <label for="username">Username or email address</label>
+      <input type="text" id="username" name="username" autocomplete="username" required />
+      
+      <label for="password">Password</label>
+      <input type="password" id="password" name="password" autocomplete="current-password" required />
+      
+      <button type="submit">Sign in</button>
     </form>
     <div class="footer">
       © 2025 KPR College of Arts Science and Research
@@ -89,3 +99,4 @@
   </div>
 </body>
 </html>
+
