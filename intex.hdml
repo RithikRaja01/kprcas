@@ -69,8 +69,8 @@
 </head>
 <body>
   <div class="login-container">
-    <!-- Replace the src below with your college logo URL -->
-    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Placeholder_logo.svg/1200px-Placeholder_logo.svg.png" alt="KPRCAS Logo" />
+    <!-- Optional: Add your logo here -->
+    <!-- <img src="your-logo-url.png" alt="KPRCAS Logo" /> -->
     <h2>KPRCAS Login</h2>
     <form>
       <div class="form-group">
