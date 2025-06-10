@@ -1,21 +1,91 @@
-# kprcas
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>KPRCAS Login</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f0f2f5;
+      margin: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .login-container {
+      background: white;
+      padding: 40px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+      text-align: center;
+    }
+    .login-container img {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+    .login-container h2 {
+      color: #1e3d59;
+      margin-bottom: 30px;
+    }
+    .form-group {
+      margin-bottom: 20px;
+      text-align: left;
+    }
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    .login-btn {
+      width: 100%;
+      padding: 12px;
+      background-color: #1e3d59;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .login-btn:hover {
+      background-color: #163247;
+    }
+    .footer {
+      margin-top: 20px;
+      font-size: 13px;
+      color: #888;
+    }
+  </style>
 </head>
 <body>
-  <h1>KPRCAS Login</h1>
-  <form>
-    <label for="username">Username:</label><br />
-    <input type="text" id="username" name="username" required /><br /><br />
-    
-    <label for="password">Password:</label><br />
-    <input type="password" id="password" name="password" required /><br /><br />
-    
-    <button type="submit">Login</button>
-  </form>
+  <div class="login-container">
+    <!-- Replace the src below with your college logo URL -->
+    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Placeholder_logo.svg/1200px-Placeholder_logo.svg.png" alt="KPRCAS Logo" />
+    <h2>KPRCAS Login</h2>
+    <form>
+      <div class="form-group">
+        <label for="username">Username / Email</label>
+        <input type="text" id="username" name="username" required />
+      </div>
+      <div class="form-group">
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" required />
+      </div>
+      <button type="submit" class="login-btn">Login</button>
+    </form>
+    <div class="footer">
+      © 2025 KPR College of Arts Science and Research
+    </div>
+  </div>
 </body>
 </html>
